@@ -4,8 +4,11 @@
     * [Pregunta 0](#Pregunta-0)
         * [Respuesta 0](#Respuesta-0)
     * [Pregunta 1](#Pregunta-1)
+        * [Respuesta 1](#Respuesta-1)
     * [Pregunta 2](#Pregunta-2)
+        * [Respuesta 2](#Respuesta-2)
     * [Pregunta 3](#Pregunta-3)
+        * [Respuesta 3](#Respuesta-3)
 
 ### Ejercicio
 
@@ -52,6 +55,11 @@ git checkout another-idea
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
+#### Respuesta 1
+
+![respuesta_1](media/respuesta_1.svg)
+
+
 #### Pregunta 2
 
 Supongamos que hemos decidido integrar los cambios de la rama `idea` a `master`, así que cambiamos de rama y ejecutamos un merge:
@@ -63,6 +71,10 @@ git merge idea
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
+#### Respuesta 2
+
+![respuesta_2](media/respuesta_2.svg)
+
 #### Pregunta 3
 
 Nos hemos bebido un par de botellas de vino y ejecutamos
@@ -73,5 +85,12 @@ git reset --hard master
 
 Cambia el diagrama para representar el nuevo estado del repositorio: tanto el grafo de commits como la tabla de branches pueden cambiar.
 
+#### Respuesta 3
+
+![respuesta_3](media/respuesta_3.svg)
+
+
 Marta was here4
 Jon Ander was here2
+
+
