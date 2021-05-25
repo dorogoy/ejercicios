@@ -32,7 +32,7 @@ Estamos evaluando 2 robots distintos para llevar a cabo la inspección, y para c
 * robot A: tiempos para inspeccionar 889 trastos en [robot_A.csv](robot_A.csv)
 * robot B: tiempos para inspeccionar 912 trastos en [robot_B.csv](robot_B.csv)
 
-Los robots valen exactamente lo mismo, y el tiempo que tardan en inspeccionar un Trasto es independiente de si hay un defecto o no.
+Los robots valen exactamente lo mismo. Los tiempos de cada inspección son independientes de la presencia de un defecto, del trasto inspeccionado o de lo que tardó la inspección anterior.
 
 ### Pregunta 0
 
@@ -44,7 +44,7 @@ Los robots valen exactamente lo mismo, y el tiempo que tardan en inspeccionar un
 
 ### Pregunta 2
 
-¿Qué robot debemos de comprar para llevar a cabo las inspecciones de Trastos minimizando costes de producción?
+¿Qué robot debemos de comprar para minimizar los costes de producción?
 
 ### Pregunta 3
 
@@ -61,7 +61,7 @@ Como siempre que tengamos datos de este tipo, vamos a usar las herramientas est�
 
 Podemos usar [experimentos de Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) para estimar esperanzas con respecto a la tasa de fallo.
 
-También podemos examinar [la estructura del problema de calcular la esperanza](https://en.wikipedia.org/wiki/Overlapping_subproblems) y aplicar [técnicas con papel y lápiz](https://en.wikipedia.org/wiki/Fixed_point_(mathematics) si no apetece programar.
+También podemos examinar [la estructura del problema de calcular la esperanza](https://en.wikipedia.org/wiki/Overlapping_subproblems) y aplicar [técnicas con papel y lápiz](https://en.wikipedia.org/wiki/Fixed_point_(mathematics)) si no apetece programar.
 
 ## Herramientas de implementación
 
