@@ -26,12 +26,8 @@ async def worker():
 
 
 async def main():
-    global loop
-
-    loop.create_task(print_secs())
-    await worker()
+    await asyncio.gather(print_secs(), worker())
 
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    asyncio.run(main())

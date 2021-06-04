@@ -1,7 +1,7 @@
 import asyncio
 import random
-import time
 import sys
+import time
 
 BOOTS = 0
 START_TIME = time.time()
@@ -17,8 +17,13 @@ async def make_boot():
 
 async def print_secs():
     while True:
-        print("seconds: {0:10.2f} boots: {1}".format(time.time() - START_TIME, BOOTS))
-        await asyncio.sleep(1)
+        printable_time = time.time() - START_TIME
+        secs_to_wait = 1
+        print("seconds: {0:10.2f} boots: {1}".format(printable_time, BOOTS))
+        micro_seconds = printable_time % 1
+        if micro_seconds:
+            secs_to_wait -= micro_seconds
+        await asyncio.sleep(secs_to_wait)
 
 
 async def worker():
